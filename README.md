@@ -1,0 +1,3 @@
+# TestesJavaScript
+Testando funçoes do js, eventos, etc...
+Testes do curso de javascript do canal Curso em video ( https://www.youtube.com/watch?v=EEStcIe8rAM&list=RDCMUCrWvhVmt0Qac3HgsjQK62FQ&start_radio=1 )
