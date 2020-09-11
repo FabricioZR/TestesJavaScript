@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Curso JS</title>
+  <style>
+    div#msg {
+      background-color: rgb(8, 14, 119);
+      width: 1100px;
+      height: 40px;
+      text-align: center;
+      color: rgb(255, 255, 255);
+      font: normal 20pt Arial;
+    }
+
+    input#txtn1 {
+      font: normal 20pt Arial;
+      width: 70px;
+      height: 30px;
+    }
+
+    input#txtn2 {
+      font: normal 20pt Arial;
+      width: 70px;
+      height: 30px;
+    }
+  </style>
+</head>
+
+<body>
+
+
+  <div id="msg">
+    <h4> Eventos DOM!!</h4>
+  </div>
+  <input type="number" name="txtn1" id="txtn1"> +
+  <input type="number" name="txtn2" id="txtn2">
+  <input type="button" value="somar" onclick="somar()">
+  <div id="res"></div>
+
+
+  <script>
+    var a = window.document.getElementById("msg")
+    //o eventlistener vai adicionar ao a (que pega o id do elemento div) uma funcao que "escuta o evento"
+    a.addEventListener("click", clicar)
+    a.addEventListener("mouseout", entrar)
+
+    function clicar() {
+      a.innerText = "clicou"
+    }
+
+    function entrar() {
+      a.innerText = "entrou"
+    }
+
+    function somar() {
+      var tn1 = document.getElementById('txtn1')
+      var tn2 = document.querySelector('input#txtn2')
+      var res = document.querySelector('div#res')
+      var n1 = Number(tn1.value)
+      var n2 = Number(tn2.value)
+      var s = n1 + n2
+      res.innerHTML = `A soma entre ${n1} e ${n2} é : ${s}! `
+    }
+  </script>
+
+
+</body>
+
+</html>
