@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contador</title>
+  <link rel="stylesheet" href="estilo03.css" />
+</head>
+<!--
+    Exercício consiste em pedir ao usuario um numero de inicio, um de fim e 
+    outro de passo que seria de quantos em quantos numeros vamos contar. 
+    ex. contando de 1 até 10 pulando de 2 em 2 (1,3,5,7,9,10)
+
+-->
+
+<body>
+
+  <header>
+    <h1>Super Contador!</h1>
+  </header>
+
+  <section>
+
+    <div id="dados">
+
+      <p>INÍCIO: <input type="number" name="inicio" id="txtinicio" /></p>
+      <p>FIM: <input type="number" name="fim" id="txtfim" /></p>
+      <p>PASSO: <input type="number" name="passo" id="txtpasso" min="1" /></p>
+      <p><input type="button" value="Contar" onclick="contar()"></p>
+
+    </div>
+
+    <div id="res">
+
+      <div>Preparando a contagem...</div>
+
+    </div>
+
+  </section>
+
+  <footer>
+    <p>&copy; Curso Em Vídeo</p>
+  </footer>
+
+  <script src="scripts03.js  "></script>
+
+</body>
+
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Verificador de idade</title>
+    <link rel="stylesheet" href="estilo02.css" />
+  </head>
+  <!--
+    Exercício consiste em pedir ao usuario o ano em que nasceu e seu sexo, 
+    depois mostra a ele sua idade e se ele é (velho,velha,criança,menina,menino,adolecente)
+
+
+-->
+  <body>
+    <header>
+      <h1>Verificador de idade</h1>
+    </header>
+
+    <section>
+      <div>
+        <p>
+          Ano de nascimento:
+          <input type="number" name="txtano" id="txtano" min="0" />
+        </p>
+        <p>
+          Sexo: <input type="radio" name="radsex" id="mas" />
+          <label for="mas"> Masculino</label>
+          <input type="radio" name="radsex" id="fem" />
+          <label for="fem"> Feminino</label>
+        </p>
+        <p>
+          <input type="button" value="verificar" onclick="verificar()" />
+        </p>
+      </div>
+
+      <div id="res">Preencha os dados acima para ver o resultado</div>
+    </section>
+
+    <footer></footer>
+
+    <script src="scripts02.js  "></script>
+  </body>
+</html>
