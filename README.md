@@ -1,0 +1,3 @@
+# TestesJavaScript
+Anotações feitas a partir do curso de js do canal Curso Em Video;
+Testando funçoes do js, eventos, if, while, etc...
